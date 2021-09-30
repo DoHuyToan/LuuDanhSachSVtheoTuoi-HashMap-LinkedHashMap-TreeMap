@@ -14,11 +14,12 @@ public class TestMap {
         System.out.println("Display entries in HashMap");
         System.out.println(hashMap + "\n");
 
-        // tạo đối tượng treeMap lưu key theo thứ tự giảm dần đầu chữ cái aphabet
+        // tạo đối tượng treeMap lưu key theo thứ tự giảm dần đầu chữ cái aphabet theo TreeMap
         Map<String, Integer> treeMap = new TreeMap<>(hashMap);
         System.out.println("Display entries in ascending order of key");
         System.out.println(treeMap);
 
+        // tạo đối tượng linkedHashMap để lưu danh sách tương tự HashMap và hiển thị dữ liệu
         Map<String, Integer> linkedHashMap = new LinkedHashMap<>(16, 0.75f, true);
         linkedHashMap.put("Smith", 30);
         linkedHashMap.put("Anderson", 31);
